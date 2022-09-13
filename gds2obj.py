@@ -268,7 +268,7 @@ for cell in gdsii.top_level(): # loop through cells to read paths and polygons
         zmax = layerstack[layer_number]['zmax']
         layername = layerstack[layer_number]['name']
 
-        
+        print("\nProcesing layer " + layername + "\nExtruding polygons and preparing vertices and faces")
         positions = []
         indices = []        
         indices_offset = 0
@@ -309,7 +309,7 @@ for cell in gdsii.top_level(): # loop through cells to read paths and polygons
 
     
         filename = gdsii_file_path + "_" + layername + '.obj'
-        print ("\nWriting layer " + layername + " OBJ file: " + filename)
+        print ("Writing layer " + layername + " OBJ file: " + filename)
         # filename = cell.name + "_" + layername + '.obj'
         object_name = cell.name + "_" + layername 
         output_file = open(filename, 'w') 
