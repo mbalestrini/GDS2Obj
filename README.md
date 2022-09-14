@@ -14,7 +14,7 @@ triangle
 ## Usage:
 `python3 gds2obj.py file.gds`
 
-Outputs one file per layer named  `file.gds_layername.gltf` in the same folder as the original gds file
+Outputs one file per layer named  `file.gds_layername.obj` in the same folder as the original gds file
 
 
 ## Note from original gdsiistl script:
